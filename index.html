@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>porn but pretty</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="alt-erotic visuals with taste. porn, but pretty." />
+  <meta name="description" content="porn, but pretty. sexy people doing sexy things. pay-per drop. no subscriptions. no spam. just pretty porn." />
 
   <style>
     :root {
@@ -12,9 +12,10 @@
       --bg-accent: #151520;
       --text-main: #f4f0ea;
       --text-muted: #b2aca1;
-      --accent: #e3a3b0; /* soft blush */
+      --accent: #e3a3b0; /* soft blush, if needed later */
       --button-bg: #f4f0ea;
       --button-text: #151520;
+      --border-subtle: rgba(244, 240, 234, 0.24);
       --max-width: 720px;
     }
 
@@ -29,8 +30,8 @@
     }
 
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
-        "Helvetica Neue", Arial, sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
       background: radial-gradient(circle at top, var(--bg-accent), var(--bg));
       color: var(--text-main);
       display: flex;
@@ -45,34 +46,43 @@
       text-align: center;
     }
 
-    .logo {
+    .hero-line {
       font-family: "Bodoni MT", "Bodoni Moda", "Didot", "Times New Roman", serif;
-      font-size: clamp(32px, 5vw, 44px);
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
-
-    .tagline-main {
-      font-size: 18px;
       text-transform: lowercase;
       letter-spacing: 0.18em;
-      color: var(--text-muted);
-      margin-bottom: 32px;
+      font-size: clamp(26px, 5vw, 34px);
+      margin-bottom: 6px;
     }
 
-    .line {
+    .hero-line + .hero-line {
+      margin-top: 4px;
+    }
+
+    .hero-secondary {
+      font-size: 15px;
+      text-transform: lowercase;
+      letter-spacing: 0.14em;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+    }
+
+    .divider {
       width: 72px;
       height: 1px;
       background: rgba(244, 240, 234, 0.5);
-      margin: 0 auto 28px auto;
+      margin: 0 auto 24px auto;
     }
 
-    .subcopy {
-      font-size: 15px;
+    .body-copy {
+      font-size: 14px;
       line-height: 1.6;
       color: var(--text-muted);
-      margin-bottom: 32px;
+      margin-bottom: 28px;
+      text-transform: lowercase;
+    }
+
+    .body-copy span {
+      display: block;
     }
 
     .buttons {
@@ -80,19 +90,21 @@
       flex-wrap: wrap;
       gap: 12px;
       justify-content: center;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
     .btn {
       padding: 10px 18px;
       border-radius: 999px;
-      border: 1px solid rgba(244, 240, 234, 0.24);
+      border: 1px solid var(--border-subtle);
       font-size: 14px;
       text-decoration: none;
       transition: all 0.18s ease-out;
       display: inline-flex;
       align-items: center;
       justify-content: center;
+      min-width: 150px;
+      text-transform: lowercase;
     }
 
     .btn-primary {
@@ -113,48 +125,52 @@
       border-color: rgba(244, 240, 234, 0.5);
     }
 
-    .note {
+    .footer {
       font-size: 11px;
       color: var(--text-muted);
-      opacity: 0.7;
-      margin-top: 8px;
+      opacity: 0.8;
+      text-transform: lowercase;
+      margin-top: 4px;
     }
 
     @media (max-width: 480px) {
-      .logo {
-        letter-spacing: 0.16em;
-      }
-      .tagline-main {
+      .hero-line {
         letter-spacing: 0.14em;
+        font-size: 24px;
+      }
+      .hero-secondary {
+        letter-spacing: 0.12em;
       }
     }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <div class="logo">PORN BUT PRETTY</div>
-    <div class="tagline-main">alt-erotic visuals for the aesthetically horny</div>
-    <div class="line"></div>
+    <div class="hero-line">porn, but pretty</div>
+    <div class="hero-line hero-secondary">sexy people doing sexy things</div>
 
-    <p class="subcopy">
-      curated porn with taste. real bodies, intentional lighting, pretty filth. 
-      this is not a subscription trap – just sets, scenes, and visuals you actually want to own.
-    </p>
+    <div class="divider"></div>
+
+    <div class="body-copy">
+      <span>pay-per drop</span>
+      <span>no subscriptions. no spam.</span>
+      <span>just pretty porn.</span>
+    </div>
 
     <div class="buttons">
-      <!-- Replace these hrefs with your real links -->
+      <!-- replace with your real OF link -->
       <a class="btn btn-primary" href="https://onlyfans.com/YOURHANDLE" target="_blank" rel="noopener">
         enter the feed
       </a>
       <a class="btn btn-outline" href="https://x.com/pornbutpretty" target="_blank" rel="noopener">
         follow on x
       </a>
-      <!-- add more buttons as you expand (clips, store, mailing list, etc.) -->
     </div>
 
-    <div class="note">
-      porn, but pretty. support the art that turns you on.
+    <div class="footer">
+      produced by aperture &amp; ass
     </div>
   </div>
 </body>
 </html>
+
